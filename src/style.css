@@ -229,6 +229,15 @@ ul {
 .flex-col {
   display: flex;
   flex-direction: column;
+
+  &.gap2 {
+    row-gap: 0.125rem;
+  }
+
+  &.gap4 {
+    row-gap: 0.25rem;
+  }
+
   &.gap8 {
     row-gap: 0.75rem;
   }
@@ -258,6 +267,19 @@ ul {
       justify-content: flex-end;
       text-align: right;
       font-style: italic;
+    }
+    & strong {
+      color: var(--color-000000);
+    }
+    & .table-row-left {
+      display: flex;
+      align-items: center;
+      column-gap: 0.25rem;
+      & .dot {
+        width: 0.25rem;
+        height: 0.25rem;
+        border-radius: 50%;
+      }
     }
 
     &.is-5-cels {
@@ -337,4 +359,16 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.info_wrap {
+  display: flex;
+  column-gap: 0.125rem;
+  color: var(--color-000000);
+  font-size: 0.625rem;
+  font-weight: 500;
+
+  & figure {
+    flex-shrink: 0;
+  }
 }
