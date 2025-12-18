@@ -1,0 +1,65 @@
+@import "./normalize.css";
+@import "./fonts.css";
+
+:root {
+  --color-ffffff: #ffffff;
+  --color-000000: #000000;
+  --color-4e535b: #4e535b;
+  --color-1f1f1f: #1f1f1f;
+  --color-0050ef: #0050ef;
+  --color-d8d8d8: #d8d8d8;
+  --color-6d6d6d: #6d6d6d;
+  --color-31dace: #31dace;
+  --color-f7f3f2: #f7f3f2;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "ppneuemontreal", sans-serif;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: var(--color-4e535b);
+  background-color: var(--color-ffffff);
+  line-height: 1.25;
+  font-size: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding: 1.5rem 0;
+  width: 100%;
+  overflow: clip;
+}
+
+section {
+  position: relative;
+  z-index: 20;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 92svw;
+  max-width: 33.75rem;
+  margin: 0 auto;
+  position: relative;
+  z-index: 20;
+
+  &.container-article {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+}
